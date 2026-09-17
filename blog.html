@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | ApexInspect Services</title>
+    
+        <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230284c7'/%3E%3Cpath d='M20 50l30-30 30 30M30 42v38a4 4 0 004 4h12M66 42v38a4 4 0 01-4 4H50m-14 0v-20a4 4 0 014-4h8a4 4 0 014 4v20' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        accent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 font-sans antialiased transition-colors duration-300">
+
+    <!-- Header (Condensed for brevity, will function correctly) -->
+        <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl group-hover:bg-primary-700 transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </div>
+                        <span class="font-heading font-bold text-xl text-primary-950 dark:text-white">Apex<span class="text-primary-600 dark:text-primary-500">Inspect</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 lg:space-x-10 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home 1</a>
+                    <a href="home2.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home 2</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">About</a>
+                    <a href="sample-report.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Sample Report</a>
+                    <a href="blog.html" class="text-primary-600 dark:text-primary-400 font-medium transition">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Contact</a>
+                    <a href="dashboard.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Dashboard</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="signup.html" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-lg font-medium transition shadow-lg shadow-primary-500/30">Sign Up</a>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white rounded-lg transition" aria-label="Toggle Dark Mode">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </button>
+
+                    <!-- RTL Toggle -->
+                    <button class="rtl-toggle p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white font-bold text-sm rounded-lg transition" aria-label="Toggle RTL">
+                        RTL
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center space-x-2">
+                    <button class="theme-toggle p-2 text-gray-500 dark:text-gray-400" aria-label="Toggle Dark Mode">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </button>
+                    <button class="rtl-toggle p-2 text-gray-500 dark:text-gray-400 font-bold text-xs" aria-label="Toggle RTL">RTL</button>
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 absolute w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Home 1</a>
+                <a href="home2.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Home 2</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">About</a>
+                <a href="sample-report.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Sample Report</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary-600 bg-primary-50 dark:bg-slate-800 dark:text-primary-400">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Contact</a>
+                <a href="dashboard.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Dashboard</a>
+                <div class="border-t border-gray-200 dark:border-slate-700 pt-2 pb-2">
+                    <a href="signup.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary-600 font-bold">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section with Background Image -->
+        <section class="relative bg-slate-950 text-white py-24 lg:py-32 text-center px-4 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Modern home interior and architectural details" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/50 to-slate-950/75"></div>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-primary-500/20 backdrop-blur-md text-primary-300 font-semibold text-sm mb-4 border border-primary-400/30">Knowledge Center</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 drop-shadow-md">Home Inspection Insights</h1>
+                <p class="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">Expert advice on property maintenance, buying tips, and industry standards.</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="py-20 bg-gray-50 dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Article 1 -->
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden flex flex-col transition hover:shadow-xl group">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Home buying process" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded">Buying Tips</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                <span>Oct 15, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 line-clamp-2"><a href="#" class="hover:text-primary-600 dark:hover:text-primary-400 transition">What to Know Before Buying a Home</a></h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1 line-clamp-3">Navigating the real estate market can be daunting. We outline the critical steps every buyer should take before signing the dotted line.</p>
+                            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                                Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden flex flex-col transition hover:shadow-xl group">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Inspection issues" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-danger-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded">Common Issues</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                <span>Sep 28, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 line-clamp-2"><a href="#" class="hover:text-primary-600 dark:hover:text-primary-400 transition">Common Problems Found During Home Inspections</a></h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1 line-clamp-3">From faulty wiring to poor drainage, discover the top 5 most common defects our inspectors uncover in residential properties.</p>
+                            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                                Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden flex flex-col transition hover:shadow-xl group">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="For sale sign" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-accent-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded">Selling Advice</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                <span>Sep 12, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 line-clamp-2"><a href="#" class="hover:text-primary-600 dark:hover:text-primary-400 transition">Why Pre-Listing Inspections Matter</a></h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1 line-clamp-3">Selling your home? Learn why investing in an inspection before you list can speed up the closing process and maximize your sale price.</p>
+                            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                                Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden flex flex-col transition hover:shadow-xl group">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1621252179027-94459d278660?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Radon testing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-slate-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded">Health & Safety</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                <span>Aug 30, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 line-clamp-2"><a href="#" class="hover:text-primary-600 dark:hover:text-primary-400 transition">Understanding Radon Testing</a></h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1 line-clamp-3">Radon is an invisible threat in many homes. We break down what radon is, how we test for it, and what to do if your levels are high.</p>
+                            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                                Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden flex flex-col transition hover:shadow-xl group">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Home maintenance" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded">Maintenance</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                <span>Aug 14, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 line-clamp-2"><a href="#" class="hover:text-primary-600 dark:hover:text-primary-400 transition">Home Maintenance Warning Signs</a></h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1 line-clamp-3">Catch issues early. Here are the top visual cues that indicate your home's major systems might require professional attention.</p>
+                            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                                Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden flex flex-col transition hover:shadow-xl group">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Home inspector talking to client" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded">Buying Tips</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                <span>Jul 22, 2026</span>
+                            </div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 line-clamp-2"><a href="#" class="hover:text-primary-600 dark:hover:text-primary-400 transition">Questions to Ask Your Home Inspector</a></h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-1 line-clamp-3">Don't be afraid to ask! We've compiled a list of the most important questions you should ask your inspector during and after the assessment.</p>
+                            <a href="#" class="text-primary-600 dark:text-primary-400 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                                Read More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+                <!-- Testimonials -->
+        <section class="py-24 bg-white dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="inline-block bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">What Our Clients Say</span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Trusted by Hundreds of Homeowners</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Our clients move forward with confidence knowing every detail has been thoroughly reviewed.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex text-accent-500 mb-4">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed italic">"ApexInspect found a hidden roof leak that the seller never disclosed. Their detailed report saved us thousands in negotiation. Worth every penny."</p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-gray-200/60 dark:border-slate-700/60">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="James Mitchell" class="w-12 h-12 rounded-full object-cover border-2 border-primary-500/30 shadow-sm flex-shrink-0">
+                            <div>
+                                <div class="font-bold text-gray-900 dark:text-white text-base">James Mitchell</div>
+                                <div class="text-xs font-medium text-gray-500 dark:text-gray-400">First-Time Homebuyer, NY</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex text-accent-500 mb-4">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed italic">"The inspector walked us through every room explaining what he found. The online report with photos was incredibly clear. We felt completely informed before closing."</p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-gray-200/60 dark:border-slate-700/60">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sarah Reynolds" class="w-12 h-12 rounded-full object-cover border-2 border-accent-500/30 shadow-sm flex-shrink-0">
+                            <div>
+                                <div class="font-bold text-gray-900 dark:text-white text-base">Sarah Reynolds</div>
+                                <div class="text-xs font-medium text-gray-500 dark:text-gray-400">Real Estate Investor, CA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full">
+                        <div>
+                            <div class="flex text-accent-500 mb-4">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed italic">"We've now used ApexInspect for three different properties. Consistent, professional, and incredibly thorough every single time. Our go-to inspection team."</p>
+                        </div>
+                        <div class="flex items-center gap-3.5 pt-4 border-t border-gray-200/60 dark:border-slate-700/60">
+                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="David & Lisa Tran" class="w-12 h-12 rounded-full object-cover border-2 border-green-500/30 shadow-sm flex-shrink-0">
+                            <div>
+                                <div class="font-bold text-gray-900 dark:text-white text-base">David & Lisa Tran</div>
+                                <div class="text-xs font-medium text-gray-500 dark:text-gray-400">Repeat Clients, TX</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-24 bg-gray-50 dark:bg-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="inline-block bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Common Questions</span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Everything you need to know before booking your home inspection.</p>
+                </div>
+                <div class="space-y-4" id="faq-accordion">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white pr-4">How long does a typical home inspection take?</span>
+                            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Most standard home inspections take between 2–4 hours, depending on the size and age of the property. Larger homes or those with additional systems like pools or detached structures may take longer.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white pr-4">Should I be present during the inspection?</span>
+                            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We strongly encourage buyers to attend the inspection. Walking through the property with our inspector gives you firsthand knowledge about any issues discovered and a chance to ask questions in real time.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white pr-4">When will I receive my inspection report?</span>
+                            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Your comprehensive digital report — complete with photos, annotations, and priority ratings — will be delivered to your secure client portal within 24 hours of the inspection completion.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white pr-4">What is not covered in a home inspection?</span>
+                            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">A standard inspection covers all visually accessible areas. Items behind walls, underground pipes, and certain specialist areas like asbestos or mold testing may require separate specialist inspections, which we can also arrange.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
+                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white pr-4">How do I book an inspection?</span>
+                            <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Simply fill out our <a href="contact.html" class="text-primary-600 hover:text-primary-500 underline">contact form</a> or call us at (555) 123-4567. We'll confirm your preferred date and time, and send a booking confirmation within the hour.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 dark:bg-black text-gray-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Brand -->
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary-600 rounded flex items-center justify-center text-white font-heading font-bold">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </div>
+                        <span class="font-heading font-bold text-xl text-white">Apex<span class="text-primary-500">Inspect</span></span>
+                    </a>
+                    <p class="mb-6 text-sm leading-relaxed">Providing premium, comprehensive property assessments to protect your most valuable investment. Excellence in every inspection.</p>
+                                        <div class="flex items-center space-x-3">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-300" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-slate-700 transition-all duration-300" aria-label="X">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-pink-600 transition-all duration-300" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-700 transition-all duration-300" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-red-600 transition-all duration-300" aria-label="YouTube">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="hover:text-primary-400 transition">About Us</a></li>
+                        <li><a href="sample-report.html" class="hover:text-primary-400 transition">Sample Report</a></li>
+                        <li><a href="blog.html" class="hover:text-primary-400 transition">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-primary-400 transition">Contact</a></li>
+                        <li><a href="login.html" class="hover:text-primary-400 transition">Client Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 mt-0.5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>123 Inspection Way, Suite 100<br>Metropolis, NY 10001</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <a href="tel:+15551234567" class="hover:text-white transition">(555) 123-4567</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <a href="mailto:info@apexinspect.com" class="hover:text-white transition">info@apexinspect.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2026 ApexInspect Services. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+        <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" class="fixed bottom-6 right-6 bg-primary-600 text-white p-3.5 rounded-full shadow-xl opacity-0 invisible transition-all duration-300 hover:bg-primary-500 hover:scale-110 focus:outline-none z-50 flex items-center justify-center cursor-pointer border border-white/20" aria-label="Back to Top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
