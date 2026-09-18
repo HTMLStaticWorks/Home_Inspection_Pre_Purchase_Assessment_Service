@@ -90,16 +90,17 @@
 
                 <!-- Actions -->
                 <div class="hidden lg:flex items-center space-x-2 xl:space-x-4 whitespace-nowrap">
-                    <!-- Theme Toggle -->
-                    <button class="theme-toggle p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white rounded-lg transition" aria-label="Toggle Dark Mode">
-                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-                    </button>
-
-                    <!-- RTL Toggle -->
-                    <button class="rtl-toggle p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white font-bold text-sm rounded-lg transition" aria-label="Toggle RTL">
-                        RTL
-                    </button>
+                    <!-- Toggles Container -->
+                    <div class="flex items-center bg-white dark:bg-slate-800 rounded-full shadow-sm border border-gray-200 dark:border-slate-700 p-1 space-x-2 mr-2">
+                        <!-- Theme Toggle -->
+                        <button class="theme-toggle p-1.5 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle Dark Mode">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                        </button>
+                        <!-- RTL Toggle -->
+                        <button class="rtl-toggle p-1.5 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle RTL">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                        </button>
+                    </div>
 
                     <a href="signup.html" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-lg font-medium transition shadow-lg shadow-primary-500/30">Sign Up</a>
                 </div>
@@ -353,8 +354,8 @@
                 <div class="space-y-4" id="faq-accordion">
                     <!-- FAQ 1 -->
                     <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span class="font-semibold text-gray-900 dark:text-white pr-4">How long does a typical home inspection take?</span>
+                        <button class="w-full flex items-center justify-between gap-4 p-4 md:p-6 text-left rtl:text-right group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white flex-1 text-left rtl:text-right">How long does a typical home inspection take?</span>
                             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="px-6 pb-6 hidden">
@@ -363,8 +364,8 @@
                     </div>
                     <!-- FAQ 2 -->
                     <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span class="font-semibold text-gray-900 dark:text-white pr-4">Should I be present during the inspection?</span>
+                        <button class="w-full flex items-center justify-between gap-4 p-4 md:p-6 text-left rtl:text-right group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white flex-1 text-left rtl:text-right">Should I be present during the inspection?</span>
                             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="px-6 pb-6 hidden">
@@ -373,8 +374,8 @@
                     </div>
                     <!-- FAQ 3 -->
                     <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span class="font-semibold text-gray-900 dark:text-white pr-4">When will I receive my inspection report?</span>
+                        <button class="w-full flex items-center justify-between gap-4 p-4 md:p-6 text-left rtl:text-right group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white flex-1 text-left rtl:text-right">When will I receive my inspection report?</span>
                             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="px-6 pb-6 hidden">
@@ -383,8 +384,8 @@
                     </div>
                     <!-- FAQ 4 -->
                     <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span class="font-semibold text-gray-900 dark:text-white pr-4">What is not covered in a home inspection?</span>
+                        <button class="w-full flex items-center justify-between gap-4 p-4 md:p-6 text-left rtl:text-right group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white flex-1 text-left rtl:text-right">What is not covered in a home inspection?</span>
                             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="px-6 pb-6 hidden">
@@ -393,8 +394,8 @@
                     </div>
                     <!-- FAQ 5 -->
                     <div class="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-700 overflow-hidden">
-                        <button class="w-full flex items-center justify-between p-6 text-left group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span class="font-semibold text-gray-900 dark:text-white pr-4">How do I book an inspection?</span>
+                        <button class="w-full flex items-center justify-between gap-4 p-4 md:p-6 text-left rtl:text-right group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-gray-900 dark:text-white flex-1 text-left rtl:text-right">How do I book an inspection?</span>
                             <svg class="w-5 h-5 text-primary-600 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="px-6 pb-6 hidden">
@@ -489,5 +490,7 @@
 
     <script src="js/forms.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 </html>
