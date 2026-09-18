@@ -46,18 +46,20 @@
         }
     </script>
 </head>
-    <body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 font-sans antialiased min-h-screen flex items-center justify-center p-4">
-    <!-- Floating Controls (Theme & RTL) -->
-    <div class="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-2 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-        <button class="theme-toggle p-2 text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 rounded-xl transition flex items-center justify-center" aria-label="Toggle Dark Mode">
-            <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            <svg class="w-5 h-5 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-        </button>
-        <button class="rtl-toggle px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200 font-bold text-xs rounded-xl transition" aria-label="Toggle RTL">
-            RTL
-        </button>
+    <body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 font-sans antialiased min-h-screen flex flex-col p-4 md:p-8">
+    <!-- Top Controls Area -->
+    <div class="w-full flex justify-end mb-4 shrink-0">
+        <!-- Controls (Theme & RTL) -->
+        <div class="flex items-center gap-2 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-2 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700">
+            <button class="theme-toggle p-2 text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 rounded-xl transition flex items-center justify-center" aria-label="Toggle Dark Mode">
+                <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg class="w-5 h-5 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </button>
+            <button class="rtl-toggle px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200 font-bold text-xs rounded-xl transition" aria-label="Toggle RTL">
+                RTL
+            </button>
+        </div>
     </div>
-
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -67,8 +69,8 @@
         }
     </script>
 
-    <div class="w-full max-w-2xl bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-slate-700 p-8 md:p-12">
-        
+    <div class="flex-1 flex items-center justify-center w-full pb-10">
+        <div class="w-full max-w-2xl bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-slate-700 p-8 md:p-12">
         <div class="text-center mb-10">
             <a href="index.html" class="inline-flex items-center gap-2 group mb-6">
                 <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl">
@@ -172,7 +174,7 @@
             </div>
         </form>
 
-        <p class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">
+        <p class="mt-8 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">
             Already have an account? 
             <a href="login.html" class="font-medium text-primary-600 hover:text-primary-500 transition">Sign in instead</a>
         </p>
@@ -184,5 +186,6 @@
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
     </button>
     <script src="js/main.js"></script>
+    </div>
 </body>
 </html>

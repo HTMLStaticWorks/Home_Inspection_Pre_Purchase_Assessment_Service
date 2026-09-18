@@ -46,18 +46,20 @@
         }
     </script>
 </head>
-    <body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 font-sans antialiased min-h-screen flex items-center justify-center p-4">
-    <!-- Floating Controls (Theme & RTL) -->
-    <div class="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-2 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-        <button class="theme-toggle p-2 text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 rounded-xl transition flex items-center justify-center" aria-label="Toggle Dark Mode">
-            <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            <svg class="w-5 h-5 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-        </button>
-        <button class="rtl-toggle px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200 font-bold text-xs rounded-xl transition" aria-label="Toggle RTL">
-            RTL
-        </button>
+    <body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 font-sans antialiased min-h-screen flex flex-col p-4 md:p-8">
+    <!-- Top Controls Area -->
+    <div class="w-full flex justify-end mb-4 shrink-0">
+        <!-- Controls (Theme & RTL) -->
+        <div class="flex items-center gap-2 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md p-2 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700">
+            <button class="theme-toggle p-2 text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 rounded-xl transition flex items-center justify-center" aria-label="Toggle Dark Mode">
+                <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg class="w-5 h-5 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </button>
+            <button class="rtl-toggle px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-700 dark:text-gray-200 font-bold text-xs rounded-xl transition" aria-label="Toggle RTL">
+                RTL
+            </button>
+        </div>
     </div>
-
     <!-- Theme Initialization Script -->
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -68,55 +70,18 @@
         }
     </script>
 
-    <div class="w-full max-w-5xl flex flex-col lg:flex-row bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-slate-700">
-        
-        <!-- Left Side - Visual/Explanation -->
-        <div class="hidden lg:flex lg:w-1/2 bg-primary-950 p-12 flex-col justify-between relative overflow-hidden text-white">
-            <div class="absolute inset-0 opacity-20">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Architecture" class="w-full h-full object-cover">
-            </div>
-            
-            <div class="relative z-10">
-                <a href="index.html" class="flex items-center gap-2 group mb-12 inline-flex">
-                    <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl group-hover:bg-primary-700 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                    </div>
-                    <span class="font-heading font-bold text-xl">Apex<span class="text-primary-500">Inspect</span></span>
-                </a>
-                
-                <h2 class="text-4xl font-heading font-bold mb-6">Your Personal Client Portal</h2>
-                <p class="text-lg text-gray-300 leading-relaxed">
-                    Access your interactive digital reports, review repair requests, manage payments, and schedule new inspections all in one secure location.
-                </p>
-            </div>
-            
-            <div class="relative z-10 flex items-center gap-4">
-                <div class="flex -space-x-4">
-                    <img class="w-10 h-10 border-2 border-primary-950 rounded-full" src="https://i.pravatar.cc/100?img=1" alt="Avatar">
-                    <img class="w-10 h-10 border-2 border-primary-950 rounded-full" src="https://i.pravatar.cc/100?img=2" alt="Avatar">
-                    <img class="w-10 h-10 border-2 border-primary-950 rounded-full" src="https://i.pravatar.cc/100?img=3" alt="Avatar">
-                </div>
-                <div class="text-sm font-medium text-gray-300">
-                    Trusted by 5,000+ homeowners
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Side - Form -->
-        <div class="w-full lg:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
-            
-            <!-- Mobile Logo (visible only on small screens) -->
-            <a href="index.html" class="flex lg:hidden items-center gap-2 group mb-10">
+    <div class="flex-1 flex items-center justify-center w-full pb-10">
+        <div class="w-full max-w-2xl bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-slate-700 p-8 md:p-12">
+        <div class="text-center mb-10">
+            <a href="index.html" class="inline-flex items-center gap-2 group mb-6">
                 <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                 </div>
-                <span class="font-heading font-bold text-xl text-primary-950 dark:text-white">Apex<span class="text-primary-600">Inspect</span></span>
+                <span class="font-heading font-bold text-2xl text-primary-950 dark:text-white">Apex<span class="text-primary-600">Inspect</span></span>
             </a>
-
-            <div class="mb-10">
-                <h1 class="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-3">Sign in to your account</h1>
-                <p class="text-gray-600 dark:text-gray-400">Enter your credentials to access your inspection reports.</p>
-            </div>
+            <h1 class="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-3">Sign in to your account</h1>
+            <p class="text-gray-600 dark:text-gray-400">Enter your credentials to access your inspection reports.</p>
+        </div>
 
             <form id="login-form" class="space-y-6" novalidate>
                 <div class="form-group">
@@ -140,12 +105,12 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
-                        <label for="remember-me" class="ml-2 block text-sm text-gray-700 dark:text-gray-300">
+                        <label for="remember-me" class="ml-2 block text-xs sm:text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">
                             Remember me
                         </label>
                     </div>
 
-                    <div class="text-sm">
+                    <div class="text-xs sm:text-sm whitespace-nowrap ml-2">
                         <a href="#" class="font-medium text-primary-600 hover:text-primary-500 transition">
                             Forgot your password?
                         </a>
@@ -183,18 +148,17 @@
             </div>
             </form>
 
-            <p class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">
+            <p class="mt-8 text-center text-xs sm:text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">
                 Don't have an account yet? 
                 <a href="signup.html" class="font-medium text-primary-600 hover:text-primary-500 transition">Register here</a>
             </p>
         </div>
-    </div>
-
     <script src="js/forms.js"></script>
     <!-- Scroll to Top Button -->
     <button id="scroll-top-btn" class="fixed bottom-6 right-6 bg-primary-600 text-white p-3.5 rounded-full shadow-xl opacity-0 invisible transition-all duration-300 hover:bg-primary-500 hover:scale-110 focus:outline-none z-50 flex items-center justify-center cursor-pointer border border-white/20" aria-label="Back to Top">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
     </button>
     <script src="js/main.js"></script>
+    </div>
 </body>
 </html>
