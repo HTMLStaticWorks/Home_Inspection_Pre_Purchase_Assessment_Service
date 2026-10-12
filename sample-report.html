@@ -109,12 +109,9 @@
 
                 <!-- Desktop Nav -->
                 <nav class="hidden lg:flex space-x-3 xl:space-x-8 items-center text-sm xl:text-base whitespace-nowrap">
-                    <a href="index.html"
-                        class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home
-                        1</a>
-                    <a href="home2.html"
-                        class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home
-                        2</a>
+                    <a href="index.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home 1</a>
+                    <a href="home2.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home 2</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Services</a>
                     <a href="about.html"
                         class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">About</a>
                     <a href="sample-report.html"
@@ -132,23 +129,20 @@
                     <!-- Toggles Container -->
                     <div class="flex items-center bg-white dark:bg-slate-800 rounded-full shadow-sm border border-gray-200 dark:border-slate-700 p-1 space-x-2 mr-2">
                         <!-- Theme Toggle -->
-                        <button class="theme-toggle p-1.5 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle Dark Mode">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                        <button class="theme-toggle w-8 h-8 text-slate-700 hover:text-primary-600 hover:border-primary-600 hover:bg-primary-50 hover:scale-105 active:scale-95 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:border-primary-400 dark:hover:bg-slate-700/60 rounded-full border-2 border-slate-700 dark:border-slate-300 transition-all duration-200 flex items-center justify-center shrink-0 cursor-pointer shadow-sm hover:shadow" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                         </button>
                         <!-- RTL Toggle -->
-                        <button class="rtl-toggle p-1.5 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle RTL">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
-                        </button>
+                        <button class="rtl-toggle w-8 h-8 text-[11px] font-bold text-slate-700 hover:text-primary-600 hover:border-primary-600 hover:bg-primary-50 hover:scale-105 active:scale-95 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:border-primary-400 dark:hover:bg-slate-700/60 rounded-full border-2 border-slate-700 dark:border-slate-300 transition-all duration-200 flex items-center justify-center shrink-0 leading-none cursor-pointer shadow-sm hover:shadow" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
                     </div>
 
-                    <a href="signup.html"
-                        class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-lg font-medium transition shadow-lg shadow-primary-500/30">Sign
-                        Up</a>
+                    <a href="contact.html"
+                        class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-lg font-medium transition shadow-lg shadow-primary-500/30 flex items-center gap-2">Book an Inspection</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="lg:hidden flex items-center space-x-2">
-                    <button class="theme-toggle p-2 text-gray-500 dark:text-gray-400" aria-label="Toggle Dark Mode">
+                    <button class="theme-toggle p-2 text-gray-500 dark:text-gray-400" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
                         <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
@@ -160,8 +154,8 @@
                             </path>
                         </svg>
                     </button>
-                    <button class="rtl-toggle p-2 text-gray-500 dark:text-gray-400 font-bold text-xs"
-                        aria-label="Toggle RTL">RTL</button>
+                    <button class="rtl-toggle p-2 text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white font-bold text-xs transition flex items-center justify-center"
+                        aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
                     <button id="mobile-menu-button"
                         class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -183,6 +177,8 @@
                 <a href="home2.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Home
                     2</a>
+                <a href="services.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Services</a>
                 <a href="about.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">About</a>
                 <a href="sample-report.html"
@@ -194,9 +190,11 @@
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Contact</a>
                 <a href="dashboard.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Dashboard</a>
-                <div class="border-t border-gray-200 dark:border-slate-700 pt-2 pb-2">
+                <div class="border-t border-gray-200 dark:border-slate-700 pt-3 pb-2 space-y-2">
+                    <a href="contact.html"
+                        class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white px-4 py-2.5 rounded-lg font-medium shadow-md shadow-primary-500/20">Book an Inspection</a>
                     <a href="signup.html"
-                        class="block px-3 py-2 rounded-md text-base font-medium text-primary-600 font-bold">Sign Up</a>
+                        class="block text-center px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary-600">Sign Up / Sign In</a>
                 </div>
             </div>
         </div>

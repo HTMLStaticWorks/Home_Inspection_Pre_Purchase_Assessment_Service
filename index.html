@@ -83,6 +83,7 @@
                 <nav class="hidden lg:flex space-x-3 xl:space-x-8 items-center text-sm xl:text-base whitespace-nowrap">
                     <a href="index.html" class="text-primary-600 dark:text-primary-400 font-medium transition">Home 1</a>
                     <a href="home2.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Home 2</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Services</a>
                     <a href="about.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">About</a>
                     <a href="sample-report.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Sample Report</a>
                     <a href="blog.html" class="text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 font-medium transition">Blog</a>
@@ -95,27 +96,23 @@
                     <!-- Toggles Container -->
                     <div class="flex items-center bg-white dark:bg-slate-800 rounded-full shadow-sm border border-gray-200 dark:border-slate-700 p-1 space-x-2 mr-2">
                         <!-- Theme Toggle -->
-                        <button class="theme-toggle p-1.5 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle Dark Mode">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                        <button class="theme-toggle w-8 h-8 text-slate-700 hover:text-primary-600 hover:border-primary-600 hover:bg-primary-50 hover:scale-105 active:scale-95 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:border-primary-400 dark:hover:bg-slate-700/60 rounded-full border-2 border-slate-700 dark:border-slate-300 transition-all duration-200 flex items-center justify-center shrink-0 cursor-pointer shadow-sm hover:shadow" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                         </button>
                         <!-- RTL Toggle -->
-                        <button class="rtl-toggle p-1.5 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle RTL">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
-                        </button>
+                        <button class="rtl-toggle w-8 h-8 text-[11px] font-bold text-slate-700 hover:text-primary-600 hover:border-primary-600 hover:bg-primary-50 hover:scale-105 active:scale-95 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:border-primary-400 dark:hover:bg-slate-700/60 rounded-full border-2 border-slate-700 dark:border-slate-300 transition-all duration-200 flex items-center justify-center shrink-0 leading-none cursor-pointer shadow-sm hover:shadow" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
                     </div>
 
-                    <a href="signup.html" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-lg font-medium transition shadow-lg shadow-primary-500/30">Sign Up</a>
+                    <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-lg font-medium transition shadow-lg shadow-primary-500/30 flex items-center gap-2">Book an Inspection</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="lg:hidden flex items-center space-x-2">
                     <div class="flex items-center bg-white dark:bg-slate-800 rounded-full shadow-sm border border-gray-200 dark:border-slate-700 p-1 space-x-1 mr-1">
-                        <button class="theme-toggle p-1 text-slate-700 dark:text-slate-300 rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle Dark Mode">
+                        <button class="theme-toggle w-7 h-7 text-slate-700 hover:text-primary-600 hover:border-primary-600 hover:bg-primary-50 hover:scale-105 active:scale-95 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:border-primary-400 dark:hover:bg-slate-700/60 rounded-full border-2 border-slate-700 dark:border-slate-300 transition-all duration-200 flex items-center justify-center shrink-0 cursor-pointer" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                         </button>
-                        <button class="rtl-toggle p-1 text-slate-700 dark:text-slate-300 rounded-full border-2 border-slate-700 dark:border-slate-300 transition flex items-center justify-center" aria-label="Toggle RTL">
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
-                        </button>
+                        <button class="rtl-toggle w-7 h-7 text-[10px] font-bold text-slate-700 hover:text-primary-600 hover:border-primary-600 hover:bg-primary-50 hover:scale-105 active:scale-95 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:border-primary-400 dark:hover:bg-slate-700/60 rounded-full border-2 border-slate-700 dark:border-slate-300 transition-all duration-200 flex items-center justify-center shrink-0 leading-none cursor-pointer" aria-label="Toggle RTL" title="Toggle RTL">RTL</button>
                     </div>
                     <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -131,13 +128,15 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary-600 bg-primary-50 dark:bg-slate-800 dark:text-primary-400">Home 1</a>
                 <a href="home2.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Home 2</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Services</a>
                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">About</a>
                 <a href="sample-report.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Sample Report</a>
                 <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Blog</a>
                 <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Contact</a>
                 <a href="dashboard.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-slate-800">Dashboard</a>
-                <div class="border-t border-gray-200 dark:border-slate-700 pt-2 pb-2">
-                    <a href="signup.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary-600 font-bold">Sign Up</a>
+                <div class="border-t border-gray-200 dark:border-slate-700 pt-3 pb-2 space-y-2">
+                    <a href="contact.html" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white px-4 py-2.5 rounded-lg font-medium shadow-md shadow-primary-500/20">Book an Inspection</a>
+                    <a href="signup.html" class="block text-center px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary-600">Sign Up / Sign In</a>
                 </div>
             </div>
         </div>
@@ -154,16 +153,19 @@
             
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
                 <div class="max-w-3xl">
-                    <span class="inline-block py-1 px-3 rounded-full bg-accent-500/20 text-accent-400 font-medium text-sm mb-6 border border-accent-500/30">Certified Professional Inspectors</span>
+                    <span class="inline-flex items-center gap-2 py-1 px-3.5 rounded-full bg-accent-500/20 text-accent-400 font-semibold text-xs md:text-sm mb-6 border border-accent-500/30">
+                        <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        Independent Pre-Purchase Property Inspections & Assessments
+                    </span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
                         Protect Your Investment <br/>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-600">Before You Commit.</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-                        Don't let hidden defects turn your dream home into a financial nightmare. Our comprehensive pre-purchase assessments give you the clarity and confidence to make the right decision.
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+                        Purchasing a property is the largest financial investment of your life. While casual buyers often focus only on cosmetic details like fresh paint, staging furniture, or decor, our certified home inspectors evaluate the vital <strong class="text-white">technical systems, structural integrity, and life safety conditions</strong> of the property—uncovering hidden foundation cracks, moisture intrusion, and costly hazards before you commit.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
                         <a href="contact.html" class="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded-lg font-medium text-lg text-center transition shadow-lg shadow-primary-600/30 flex items-center justify-center gap-2">
                             Book an Inspection
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -171,6 +173,21 @@
                         <a href="sample-report.html" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-lg font-medium text-lg text-center transition flex items-center justify-center gap-2">
                             View Sample Report
                         </a>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-gray-300">
+                        <span class="inline-flex items-center gap-1.5 bg-slate-900/60 backdrop-blur px-3 py-1.5 rounded-full border border-white/10">
+                            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            InterNACHI Certified
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-slate-900/60 backdrop-blur px-3 py-1.5 rounded-full border border-white/10">
+                            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            400+ Point Inspection
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 bg-slate-900/60 backdrop-blur px-3 py-1.5 rounded-full border border-white/10">
+                            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            Same-Day Digital Report
+                        </span>
                     </div>
                     
                     <div class="mt-12 flex items-center gap-8 border-t border-white/10 pt-8">
@@ -190,47 +207,685 @@
                                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                             </div>
-                            <div class="text-gray-400 text-sm">5.0 Average Rating</div>
+                            <div class="text-gray-400 text-sm">5.0 Average Client Rating</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why a Professional Inspection Matters -->
-        <section class="py-20 bg-white dark:bg-slate-900">
+        <!-- SECTION: What The Company Does -->
+        <section class="py-24 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">Why a Professional Inspection Matters</h2>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg">A home is one of the largest investments you'll ever make. Our meticulous inspections uncover what the naked eye misses.</p>
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span class="inline-block py-1 px-4 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 font-semibold text-xs uppercase tracking-wider mb-3">
+                        What We Do
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-6">
+                        Independent Pre-Purchase Evaluations Dedicated Solely to Buyers
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                        ApexInspect works strictly for <strong class="text-gray-900 dark:text-white">you</strong>, the property buyer. We conduct meticulous, non-invasive physical and technical evaluations of residential properties during your contract contingency window, delivering deep insight before you finalize your closing documents.
+                    </p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Feature 1 -->
-                    <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-shadow duration-300">
-                        <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/50 rounded-xl flex items-center justify-center text-primary-600 dark:text-primary-400 mb-6">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <!-- Core Philosophy: Technical, Structural & Safety Assessments vs. Surface Cosmetics -->
+                <div class="mb-16 bg-gradient-to-br from-primary-50/90 via-slate-50 to-primary-100/40 dark:from-slate-800/90 dark:via-slate-800/60 dark:to-slate-800/90 rounded-3xl p-6 md:p-10 border border-primary-200/80 dark:border-slate-700 shadow-md">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="w-8 h-8 rounded-lg bg-primary-600 text-white flex items-center justify-center font-bold text-sm">VS</span>
+                            <h3 class="text-xl md:text-2xl font-heading font-bold text-gray-900 dark:text-white">
+                                Technical, Structural & Safety Assessments vs. Surface Cosmetics
+                            </h3>
                         </div>
-                        <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem]">Identify Safety Hazards</h3>
-                        <p class="text-gray-600 dark:text-gray-400">We locate issues like faulty wiring, structural instability, and toxic mold that could threaten your family's well-being.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8">
+                            A certified home inspector's role is fundamentally different from a casual walkthrough or interior decorating appraisal. We do <strong>not</strong> focus on cosmetic details such as wall paint, carpet colors, or staged furniture. Instead, we perform rigorous diagnostic evaluations of the property's <strong>technical systems, load-bearing structures, and occupant life safety</strong> conditions.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- What We Assess -->
+                            <div class="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-800/40 shadow-sm">
+                                <div class="flex items-center gap-2.5 mb-4">
+                                    <div class="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                    </div>
+                                    <h4 class="font-heading font-bold text-emerald-700 dark:text-emerald-400 text-base">
+                                        What We Assess (Structural, Technical & Safety)
+                                    </h4>
+                                </div>
+                                <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-emerald-500 font-bold">•</span>
+                                        <span><strong>Structural Stability:</strong> Foundation settling, load-bearing walls, roof framing trusses, and subfloor deflection.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-emerald-500 font-bold">•</span>
+                                        <span><strong>Technical Systems:</strong> Main breaker panels, electrical grounding, HVAC furnaces, water heaters, and drain lines.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-emerald-500 font-bold">•</span>
+                                        <span><strong>Life Safety Conditions:</strong> Fire hazard panels, carbon monoxide leaks, gas supply safety, and hidden mold intrusion.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- What We Do NOT Focus On -->
+                            <div class="bg-white dark:bg-slate-900/90 rounded-2xl p-6 border border-gray-200 dark:border-slate-700 shadow-sm">
+                                <div class="flex items-center gap-2.5 mb-4">
+                                    <div class="w-7 h-7 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-400 flex items-center justify-center shrink-0">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                                    </div>
+                                    <h4 class="font-heading font-bold text-gray-700 dark:text-gray-300 text-base">
+                                        What We Do NOT Focus On (Surface Cosmetics)
+                                    </h4>
+                                </div>
+                                <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-gray-400 font-bold">•</span>
+                                        <span><strong>Paint & Wallpaper:</strong> Fresh paint colors, aesthetic wall scuffs, or decorative wallpaper selections.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-gray-400 font-bold">•</span>
+                                        <span><strong>Staging Furniture:</strong> Interior decorator furniture, window drapes, rugs, or decorative design tastes.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-gray-400 font-bold">•</span>
+                                        <span><strong>Superficial Wear:</strong> Minor cosmetic scratches that do not impact structural integrity or personal safety.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Pillars of What the Company Does -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Pillar 1 -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl p-7 border border-gray-200/80 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-primary-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-md shadow-primary-600/20 group-hover:scale-105 transition-transform">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">
+                                400+ Point Physical Audit
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 text-justify [text-align:justify] [text-justify:inter-word]">
+                                Certified inspectors spend 3–4 hours examining every accessible component: foundations, framing, roof coverings, attic ventilation, HVAC, plumbing, and electrical service panels.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200 dark:border-slate-700 text-xs font-semibold text-primary-600 dark:text-primary-400 flex items-center gap-1.5">
+                            <span>InterNACHI Standards</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-shadow duration-300">
-                        <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/50 rounded-xl flex items-center justify-center text-primary-600 dark:text-primary-400 mb-6">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <!-- Pillar 2 -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl p-7 border border-gray-200/80 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-accent-500 text-primary-950 rounded-xl flex items-center justify-center mb-6 shadow-md shadow-accent-500/20 group-hover:scale-105 transition-transform">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">
+                                Thermal & Diagnostic Tech
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 text-justify [text-align:justify] [text-justify:inter-word]">
+                                We utilize high-grade FLIR infrared thermal imaging, calibrated moisture meters, combustible gas detectors, and circuit analyzers to reveal concealed leaks and insulation voids behind walls.
+                            </p>
                         </div>
-                        <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem]">Negotiation Power</h3>
-                        <p class="text-gray-600 dark:text-gray-400">Armed with our detailed report, you can negotiate a fairer price or request necessary repairs before finalizing the purchase.</p>
+                        <div class="pt-4 border-t border-gray-200 dark:border-slate-700 text-xs font-semibold text-accent-600 dark:text-accent-400 flex items-center gap-1.5">
+                            <span>Non-Destructive Testing</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
                     </div>
 
-                    <!-- Feature 3 -->
-                    <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-shadow duration-300">
-                        <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/50 rounded-xl flex items-center justify-center text-primary-600 dark:text-primary-400 mb-6">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    <!-- Pillar 3 -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl p-7 border border-gray-200/80 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-primary-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-md shadow-primary-600/20 group-hover:scale-105 transition-transform">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">
+                                Same-Day Digital Reports
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 text-justify [text-align:justify] [text-justify:inter-word]">
+                                You receive a rich, interactive digital report delivered within 24 hours featuring high-resolution photos, annotated videos, categorized defect severity tags, and estimated repair requirements.
+                            </p>
                         </div>
-                        <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem]">Future Maintenance</h3>
-                        <p class="text-gray-600 dark:text-gray-400">Understand the true condition of the property's major systems to accurately budget for future replacements and upkeep.</p>
+                        <div class="pt-4 border-t border-gray-200 dark:border-slate-700 text-xs font-semibold text-primary-600 dark:text-primary-400 flex items-center gap-1.5">
+                            <span>Mobile & PDF Ready</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 4 -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl p-7 border border-gray-200/80 dark:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 bg-emerald-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">
+                                1-on-1 Consultation
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 text-justify [text-align:justify] [text-justify:inter-word]">
+                                We walk you through every critical issue on-site or over video conference. You can ask unlimited questions, ensuring you understand immediate hazards vs. normal maintenance items.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200 dark:border-slate-700 text-xs font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                            <span>Objective Buyer Advisory</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: Our Inspection Services (Clean, Well-Organized, Easy-to-Scan Layout with High-Quality Images) -->
+        <section id="services" class="py-24 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block py-1 px-4 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 font-semibold text-xs uppercase tracking-wider mb-3">
+                        Our Inspection Services
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">
+                        Complete Property Assessments Before You Commit
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed text-center">
+                        Choose from standalone diagnostic evaluations or bundle them into your complete pre-purchase package. Every service is executed to rigorous InterNACHI standards with same-day digital reporting.
+                    </p>
+                </div>
+
+                <!-- 6 Service Cards Grid (Clean, Well-Organized, Easy-to-Scan Layout) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1: Comprehensive Pre-Purchase Home Inspection -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl overflow-hidden border border-gray-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <!-- Relevant High-Quality Service Image -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Comprehensive Pre-Purchase Home Inspection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                                <span class="absolute top-3 left-3 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    Most Popular
+                                </span>
+                                <span class="absolute bottom-3 left-3 text-white text-xs font-semibold bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-md">
+                                    3–4 Hours On-Site
+                                </span>
+                            </div>
+                            <!-- Service Details -->
+                            <div class="p-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-primary-600 dark:text-primary-400">Full Property Audit</span>
+                                <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                    Comprehensive Pre-Purchase Home Inspection
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 text-justify [text-align:justify] [text-justify:inter-word]">
+                                    A thorough top-to-bottom visual audit of over 400 components including structural foundations, roof coverings, framing, HVAC units, plumbing, and electrical panels.
+                                </p>
+                                <!-- Easy-to-Scan Bullet List -->
+                                <ul class="space-y-2.5 mb-6 text-sm text-gray-700 dark:text-gray-300 border-t border-gray-200/70 dark:border-slate-700/70 pt-4">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>400+ point InterNACHI certified checklist</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Same-day interactive digital PDF report</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Repair Request Builder for escrow credits</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200/70 dark:border-slate-700/70 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 block">Starting from</span>
+                                <span class="text-lg font-bold text-gray-900 dark:text-white">$399</span>
+                            </div>
+                            <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-md shadow-primary-500/20">
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Thermal Infrared Moisture & Insulation Scan -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl overflow-hidden border border-gray-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <!-- Relevant High-Quality Service Image -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Thermal Infrared Moisture & Insulation Scan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                                <span class="absolute top-3 left-3 bg-accent-500 text-primary-950 text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    Advanced Tech
+                                </span>
+                                <span class="absolute bottom-3 left-3 text-white text-xs font-semibold bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-md">
+                                    FLIR Infrared
+                                </span>
+                            </div>
+                            <!-- Service Details -->
+                            <div class="p-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-accent-600 dark:text-accent-400">Non-Destructive Testing</span>
+                                <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                    Thermal Infrared Moisture & Insulation Scan
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 text-justify [text-align:justify] [text-justify:inter-word]">
+                                    Detect invisible pipe leaks behind fresh drywall, attic insulation voids, heating loss zones, and overheating electrical circuits using calibrated thermography cameras.
+                                </p>
+                                <!-- Easy-to-Scan Bullet List -->
+                                <ul class="space-y-2.5 mb-6 text-sm text-gray-700 dark:text-gray-300 border-t border-gray-200/70 dark:border-slate-700/70 pt-4">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>High-resolution FLIR thermal camera scan</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Pinpoint hidden plumbing leaks & damp</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Color-graded thermal temperature map</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200/70 dark:border-slate-700/70 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 block">Package Add-on</span>
+                                <span class="text-lg font-bold text-gray-900 dark:text-white">$149</span>
+                            </div>
+                            <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-md shadow-primary-500/20">
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Roof, Attic & Drone Structural Audit -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl overflow-hidden border border-gray-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <!-- Relevant High-Quality Service Image -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=800&q=80" alt="Roof, Attic & Drone Structural Audit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                                <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    High Elevation
+                                </span>
+                                <span class="absolute bottom-3 left-3 text-white text-xs font-semibold bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-md">
+                                    FAA Drone Certified
+                                </span>
+                            </div>
+                            <!-- Service Details -->
+                            <div class="p-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Exterior Diagnostics</span>
+                                <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                    Roof, Attic & Drone Structural Audit
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 text-justify [text-align:justify] [text-justify:inter-word]">
+                                    Inspect steep or fragile roofs using 4K aerial drone photography combined with on-site attic framing, flashing, chimney cap, and gutter drainage evaluations.
+                                </p>
+                                <!-- Easy-to-Scan Bullet List -->
+                                <ul class="space-y-2.5 mb-6 text-sm text-gray-700 dark:text-gray-300 border-t border-gray-200/70 dark:border-slate-700/70 pt-4">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>4K aerial drone photo inspection</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Shingle wear & remaining roof lifespan estimate</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Attic truss framing & ventilation check</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200/70 dark:border-slate-700/70 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 block">Starting from</span>
+                                <span class="text-lg font-bold text-gray-900 dark:text-white">$199</span>
+                            </div>
+                            <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-md shadow-primary-500/20">
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Sewer Scope & Underground Pipe Video -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl overflow-hidden border border-gray-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <!-- Relevant High-Quality Service Image -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Sewer Scope & Underground Pipe Video Inspection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                                <span class="absolute top-3 left-3 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    High Financial ROI
+                                </span>
+                                <span class="absolute bottom-3 left-3 text-white text-xs font-semibold bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-md">
+                                    100-Ft HD Camera
+                                </span>
+                            </div>
+                            <!-- Service Details -->
+                            <div class="p-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Plumbing Infrastructure</span>
+                                <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                    Sewer Scope & Underground Pipe Video
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 text-justify [text-align:justify] [text-justify:inter-word]">
+                                    Avoid unexpected $10,000+ sewer replacements. We insert a fiber-optic camera through the main sewer line to detect tree root blockages, cracked tiles, and line bellies.
+                                </p>
+                                <!-- Easy-to-Scan Bullet List -->
+                                <ul class="space-y-2.5 mb-6 text-sm text-gray-700 dark:text-gray-300 border-t border-gray-200/70 dark:border-slate-700/70 pt-4">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Full color video recording of main sewer line</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Pinpoint exact depth and location of clogs/cracks</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Immediate footage link for seller repair negotiation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200/70 dark:border-slate-700/70 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 block">Package Add-on</span>
+                                <span class="text-lg font-bold text-gray-900 dark:text-white">$199</span>
+                            </div>
+                            <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-md shadow-primary-500/20">
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Electrical Panel & HVAC Safety Diagnostic -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl overflow-hidden border border-gray-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <!-- Relevant High-Quality Service Image -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Electrical Panel & HVAC Safety Diagnostic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                                <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    Life Safety
+                                </span>
+                                <span class="absolute bottom-3 left-3 text-white text-xs font-semibold bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-md">
+                                    Hazard Prevention
+                                </span>
+                            </div>
+                            <!-- Service Details -->
+                            <div class="p-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400">Mechanical & Fire Safety</span>
+                                <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                    Electrical Panel & HVAC Safety Diagnostic
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 text-justify [text-align:justify] [text-justify:inter-word]">
+                                    Inspect breaker panels for unbonded grounds and recalled fire hazards (Zinsco, Federal Pacific), and test furnace heat exchangers for deadly carbon monoxide leaks.
+                                </p>
+                                <!-- Easy-to-Scan Bullet List -->
+                                <ul class="space-y-2.5 mb-6 text-sm text-gray-700 dark:text-gray-300 border-t border-gray-200/70 dark:border-slate-700/70 pt-4">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Service panel breaker & GFCI safety check</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Furnace & AC compressor operational testing</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Carbon monoxide & combustible gas analysis</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200/70 dark:border-slate-700/70 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 block">Starting from</span>
+                                <span class="text-lg font-bold text-gray-900 dark:text-white">$179</span>
+                            </div>
+                            <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-md shadow-primary-500/20">
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Mold, Radon & Indoor Air Quality Testing -->
+                    <div class="bg-gray-50 dark:bg-slate-800/80 rounded-2xl overflow-hidden border border-gray-200/80 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <!-- Relevant High-Quality Service Image -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Mold, Radon & Indoor Air Quality Testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                                <span class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    Lab Certified
+                                </span>
+                                <span class="absolute bottom-3 left-3 text-white text-xs font-semibold bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-md">
+                                    Air Sampling
+                                </span>
+                            </div>
+                            <!-- Service Details -->
+                            <div class="p-6">
+                                <span class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">Environmental Health</span>
+                                <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                    Mold, Radon & Indoor Air Quality Testing
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 text-justify [text-align:justify] [text-justify:inter-word]">
+                                    Verify healthy breathing air for your family with continuous electronic radon gas monitors and calibrated air cassette sampling for toxic black mold and airborne spores.
+                                </p>
+                                <!-- Easy-to-Scan Bullet List -->
+                                <ul class="space-y-2.5 mb-6 text-sm text-gray-700 dark:text-gray-300 border-t border-gray-200/70 dark:border-slate-700/70 pt-4">
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>48-hour continuous digital radon monitoring</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>EPA-accredited laboratory spore analysis</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                                        <span>Remediation cost roadmap & seller request guidance</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200/70 dark:border-slate-700/70 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 block">Starting from</span>
+                                <span class="text-lg font-bold text-gray-900 dark:text-white">$149</span>
+                            </div>
+                            <a href="contact.html" class="bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition shadow-md shadow-primary-500/20">
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: Why a Professional Pre-Purchase Inspection Is Critical -->
+        <section class="py-24 bg-gray-50 dark:bg-slate-900/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block py-1 px-4 rounded-full bg-accent-500/20 text-accent-600 dark:text-accent-400 font-semibold text-xs uppercase tracking-wider mb-3">
+                        Buyer Protection & Peace of Mind
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">
+                        Why a Professional Inspection Is Essential Before Purchasing
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                        Cosmetic staging, fresh paint, and tidy landscaping often disguise catastrophic flaws. A professional pre-purchase inspection provides the factual leverage, safety guarantees, and financial shield you need.
+                    </p>
+                </div>
+
+                <!-- 6 Compelling Reasons Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                    <!-- Reason 1 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-xl flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400">Financial Defense</span>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                Avoid $10,000+ in Surprise Repairs
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-justify [text-align:justify] [text-justify:inter-word]">
+                                The average uninspected home buyer encounters $14,000 in unexpected major repairs in their first year. We detect cracked heat exchangers, failing roofs, foundation settling, and deteriorating sewer lines before they become your bill.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 2 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/40 text-primary-600 dark:text-primary-400 rounded-xl flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-primary-600 dark:text-primary-400">Escrow Bargaining</span>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                Massive Contract Negotiation Leverage
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-justify [text-align:justify] [text-justify:inter-word]">
+                                Armed with our detailed inspection report and built-in Repair Request Builder, over 85% of our clients successfully negotiate significant seller closing credits, direct price reductions, or full repairs prior to closing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 3 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-xl flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Life & Health</span>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                Identify Hidden Life Safety Hazards
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-justify [text-align:justify] [text-justify:inter-word]">
+                                We pinpoint life-threatening conditions including recalled fire-hazard electrical panels (Zinsco, Federal Pacific), carbon monoxide exhaust leaks, missing GFCI safety circuits, toxic mold, and structural rot.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 4 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rounded-xl flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Contingency Safety</span>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                Legal Power to Walk Away Safely
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-justify [text-align:justify] [text-justify:inter-word]">
+                                If an inspection reveals major deal-breakers like unrepairable foundation shifting or severe environmental damage, your inspection contingency allows you to cancel the contract and retrieve 100% of your deposit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 5 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Future Budgeting</span>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                5-to-10 Year Maintenance Roadmap
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-justify [text-align:justify] [text-justify:inter-word]">
+                                We document the manufactured age, condition, and remaining design life of water heaters, air conditioners, heating units, and roofs—enabling you to plan replacement budgets with precision.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 6 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            </div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">Financing & Insurance</span>
+                            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mt-1 mb-3 min-h-[3.5rem] flex items-start">
+                                Lender & Insurance Compliance
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm text-justify [text-align:justify] [text-justify:inter-word]">
+                                Mortgage underwriters and homeowners insurance companies often reject or delay coverage on homes with unresolved structural or electrical red flags. Our verification ensures smooth loan approval.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Table: Buying Blind vs. Buying With ApexInspect -->
+                <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 md:p-10 border border-gray-200 dark:border-slate-700 shadow-xl overflow-hidden">
+                    <div class="text-center max-w-2xl mx-auto mb-8">
+                        <h3 class="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-2">
+                            The Difference Is Decisive
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">
+                            See what happens when you purchase blindly versus with a verified ApexInspect pre-purchase assessment.
+                        </p>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-sm md:text-base">
+                            <thead>
+                                <tr class="border-b border-gray-200 dark:border-slate-700">
+                                    <th class="py-4 px-4 font-heading font-semibold text-gray-900 dark:text-white w-1/3">Evaluation Factor</th>
+                                    <th class="py-4 px-4 font-heading font-semibold text-red-600 dark:text-red-400 w-1/3 bg-red-50/50 dark:bg-red-950/20 rounded-t-lg">Buying Without An Inspection</th>
+                                    <th class="py-4 px-4 font-heading font-semibold text-emerald-600 dark:text-emerald-400 w-1/3 bg-emerald-50/50 dark:bg-emerald-950/20 rounded-t-lg">With ApexInspect Assessment</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 dark:divide-slate-700/60">
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-900 dark:text-white">Inspection Scope & Focus</td>
+                                    <td class="py-4 px-4 text-gray-600 dark:text-gray-400 bg-red-50/50 dark:bg-red-950/20">Focuses only on cosmetic details (paint colors, staging furniture, and surface decor).</td>
+                                    <td class="py-4 px-4 text-gray-900 dark:text-white font-medium bg-emerald-50/50 dark:bg-emerald-950/20">Assesses vital technical systems, structural stability, and life safety conditions behind cosmetics.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-900 dark:text-white">Knowledge of Property Condition</td>
+                                    <td class="py-4 px-4 text-gray-600 dark:text-gray-400 bg-red-50/50 dark:bg-red-950/20">Surface-level cosmetics; rely on seller disclosure.</td>
+                                    <td class="py-4 px-4 text-gray-900 dark:text-white font-medium bg-emerald-50/50 dark:bg-emerald-950/20">400+ point verified audit across all structural & mechanical systems.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-900 dark:text-white">Concealed Defects & Moisture</td>
+                                    <td class="py-4 px-4 text-gray-600 dark:text-gray-400 bg-red-50/50 dark:bg-red-950/20">Completely hidden behind fresh paint and drywall.</td>
+                                    <td class="py-4 px-4 text-gray-900 dark:text-white font-medium bg-emerald-50/50 dark:bg-emerald-950/20">Detected using FLIR infrared thermography and moisture meters.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-900 dark:text-white">Contract Negotiation Power</td>
+                                    <td class="py-4 px-4 text-gray-600 dark:text-gray-400 bg-red-50/50 dark:bg-red-950/20">Zero leverage; buyer must absorb all defect repairs.</td>
+                                    <td class="py-4 px-4 text-gray-900 dark:text-white font-medium bg-emerald-50/50 dark:bg-emerald-950/20">Documented digital report to demand credits or price cuts.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-900 dark:text-white">Financial & Liability Risk</td>
+                                    <td class="py-4 px-4 text-gray-600 dark:text-gray-400 bg-red-50/50 dark:bg-red-950/20">Uncapped liability; potential $10,000–$50,000 surprises.</td>
+                                    <td class="py-4 px-4 text-gray-900 dark:text-white font-medium bg-emerald-50/50 dark:bg-emerald-950/20">Capped exposure; complete clarity on short & long-term costs.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-900 dark:text-white">Life & Safety Protection</td>
+                                    <td class="py-4 px-4 text-gray-600 dark:text-gray-400 bg-red-50/50 dark:bg-red-950/20">Unchecked fire hazards, gas leaks, and toxic mold.</td>
+                                    <td class="py-4 px-4 text-gray-900 dark:text-white font-medium bg-emerald-50/50 dark:bg-emerald-950/20">Comprehensive safety hazard screening & remediation guidance.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a href="contact.html" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3.5 px-8 rounded-xl transition shadow-lg shadow-primary-500/25">
+                            Schedule Your Inspection Before Closing
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
